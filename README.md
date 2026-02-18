@@ -1,3 +1,7 @@
+- # Author: Sai Pradeep Kala
+- # GitHub Username: pradeep240604
+- # Email: saipradeep2464@gmail.com
+
 # 🌦️ Rainfall Prediction Web Application using Machine Learning
 
 This project is an end-to-end Machine Learning application that predicts whether it will rain tomorrow based on weather conditions.  
