@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainfall Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center;     /* vertical center */
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        input[type="submit"] {
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Rainfall Prediction</h2>
+        <form action="/predict" method="post">
+            <input type="text" name="MinTemp" placeholder="Min Temperature" required>
+            <input type="text" name="MaxTemp" placeholder="Max Temperature" required>
+            <input type="text" name="Rainfall" placeholder="Rainfall" required>
+            <input type="text" name="Humidity3pm" placeholder="Humidity 3PM" required>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+
+</body>
+</html>
